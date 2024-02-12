@@ -51,12 +51,22 @@ class SplashScreenPage extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
-            child: Text(
-      'Hare Krsna',
-      style: TextStyle(
-          fontSize: 55, fontWeight: FontWeight.bold, color: Colors.amber),
-    )));
+        body: Container(
+      color: Colors.purple.shade100,
+      child: Center(
+        child: Container(
+          width: 70,
+          height: 70,
+          child: CircleAvatar(
+            backgroundColor: Colors.blue,
+            child: Icon(
+              Icons.person,
+              size: 40,
+            ),
+          ),
+        ),
+      ),
+    ));
   }
 
   void whereToGo() async {

@@ -15,7 +15,7 @@ class _LogInScreen extends State<LogInScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text("LogIn Screen")),
+        title: Center(child: Text("LogIn Screen", style: TextStyle(color: Colors.white),)),
         backgroundColor: Colors.purple.shade900,
       ),
       body: Center(
@@ -24,9 +24,13 @@ class _LogInScreen extends State<LogInScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CircleAvatar(
-                backgroundColor: Colors.blue,
-                child: Icon(Icons.person),
+              Container(
+                width: 70,
+                height: 70,
+                child: CircleAvatar(
+                  backgroundColor: Colors.blue,
+                  child: Icon(Icons.person, size: 40,),
+                ),
               ),
               SizedBox(
                 height: 11,
